@@ -45,38 +45,38 @@
   --radius: 0.5rem;
 
   /* Cores neutras */
-  --background: oklch(0.97 0.005 280); /* Fundo geral claro */
-  --foreground: oklch(0.2 0.01 280); /* Texto principal escuro */
+  --background: #f4f5f8; /* Fundo geral claro */
+  --foreground: #15161b; /* Texto principal escuro */
 
-  --card: oklch(1 0 0); /* Branco puro para cards */
-  --card-foreground: oklch(0.2 0.01 280);
+  --card: #ffffff; /* Branco puro para cards */
+  --card-foreground: #15161b;
 
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.2 0.01 280);
+  --popover: #ffffff;
+  --popover-foreground: #15161b;
 
-  --border: oklch(0.9 0.01 280); /* Cinza claro para bordas */
-  --input: oklch(0.95 0.01 280); /* Campos de input */
-  --ring: oklch(0.55 0.15 270); /* Azul violeta sutil */
+  --border: #dcdde5; /* Cinza claro para bordas */
+  --input: #edeef5; /* Campos de input */
+  --ring: #5069c8; /* Azul violeta sutil */
 
   /* Paleta principal azul violeta */
-  --primary: oklch(0.45 0.2 270); /* Botão azul principal */
-  --primary-foreground: oklch(0.98 0.02 270); /* Texto branco no botão */
+  --primary: #2f40c2; /* Botão azul principal */
+  --primary-foreground: #f3f8ff; /* Texto branco no botão */
 
   /* Secundários e neutros */
-  --secondary: oklch(0.95 0.005 280); /* Cinza suave */
-  --secondary-foreground: oklch(0.25 0.01 280);
+  --secondary: #eeeef2; /* Cinza suave */
+  --secondary-foreground: #212126;
 
-  --muted: oklch(0.95 0.005 280);
-  --muted-foreground: oklch(0.5 0.01 280);
+  --muted: #eeeef2;
+  --muted-foreground: #626369;
 
-  --accent: oklch(0.95 0.005 280);
-  --accent-foreground: oklch(0.25 0.01 280);
+  --accent: #eeeef2;
+  --accent-foreground: #212126;
 
-  --destructive: oklch(0.6 0.25 30); /* Tom avermelhado para ações perigosas */
+  --destructive: #f10000; /* Tom avermelhado para ações perigosas */
 
   /* Sidebar (se aplicável) */
-  --sidebar: oklch(0.98 0 0);
-  --sidebar-foreground: oklch(0.2 0.01 280);
+  --sidebar: #f8f8f8;
+  --sidebar-foreground: #15161b;
   --sidebar-primary: var(--primary);
   --sidebar-primary-foreground: var(--primary-foreground);
   --sidebar-accent: var(--accent);
@@ -86,35 +86,35 @@
 }
 
 .dark {
-  --background: oklch(0.18 0.01 270); /* Fundo geral escuro */
-  --foreground: oklch(0.98 0.02 280); /* Texto claro */
+  --background: #101116; /* Fundo geral escuro */
+  --foreground: #f5f7ff; /* Texto claro */
 
-  --card: oklch(0.24 0.01 270); /* Cards um pouco mais claros */
-  --card-foreground: oklch(0.98 0.02 280);
+  --card: #1d1f24; /* Cards um pouco mais claros */
+  --card-foreground: #f5f7ff;
 
-  --popover: oklch(0.24 0.01 270);
-  --popover-foreground: oklch(0.98 0.02 280);
+  --popover: #1d1f24;
+  --popover-foreground: #f5f7ff;
 
-  --border: oklch(0.3 0.01 270); /* Borda levemente mais clara */
-  --input: oklch(0.26 0.01 270); /* Input com fundo escuro */
-  --ring: oklch(0.55 0.2 270); /* Azul violeta mais vibrante */
+  --border: #2c2e33; /* Borda levemente mais clara */
+  --input: #222429; /* Input com fundo escuro */
+  --ring: #4761e4; /* Azul violeta mais vibrante */
 
-  --primary: oklch(0.55 0.2 270); /* Ação primária (botões) */
-  --primary-foreground: oklch(0.98 0.02 270); /* Texto claro sobre botão */
+  --primary: #4761e4; /* Ação primária (botões) */
+  --primary-foreground: #f3f8ff; /* Texto claro sobre botão */
 
-  --secondary: oklch(0.3 0.01 270); /* Elementos de fundo secundários */
-  --secondary-foreground: oklch(0.95 0.01 280); /* Texto claro */
+  --secondary: #2c2e33; /* Elementos de fundo secundários */
+  --secondary-foreground: #edeef5; /* Texto claro */
 
-  --muted: oklch(0.3 0.01 270);
-  --muted-foreground: oklch(0.7 0.01 280);
+  --muted: #2c2e33;
+  --muted-foreground: #9d9ea5;
 
-  --accent: oklch(0.3 0.01 270);
-  --accent-foreground: oklch(0.98 0.02 280);
+  --accent: #2c2e33;
+  --accent-foreground: #f5f7ff;
 
-  --destructive: oklch(0.65 0.22 25); /* Vermelho visível no escuro */
+  --destructive: #f94144; /* Vermelho visível no escuro */
 
-  --sidebar: oklch(0.22 0.01 270);
-  --sidebar-foreground: oklch(0.98 0.02 280);
+  --sidebar: #191a1f;
+  --sidebar-foreground: #f5f7ff;
   --sidebar-primary: var(--primary);
   --sidebar-primary-foreground: var(--primary-foreground);
   --sidebar-accent: var(--accent);
@@ -129,5 +129,17 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  h1 {
+    @apply text-xl font-bold;
+  }
+
+  span {
+    @apply text-xs font-semibold;
+  }
+
+  a {
+    @apply font-semibold text-primary underline;
   }
 }
