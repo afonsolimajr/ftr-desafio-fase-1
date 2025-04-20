@@ -11,7 +11,7 @@ export default function CardNewLink() {
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
         <Label>LINK ORIGINAL</Label>
-        <Input />
+        <Input placeholder="www.exemplo.com.br" />
         <Label>LINK ENCURTADO</Label>
         <Input placeholder="brev.ly/" />
         <Button>Salvar Link</Button>
