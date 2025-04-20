@@ -1,5 +1,6 @@
 import CardMyLinks from "./components/card-my-links";
 import CardNewLink from "./components/card-new-link";
+import CardNotFound from "./components/card-not-found";
 import CardRedirect from "./components/card-redirect";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <CardNewLink />
       <CardMyLinks />
       <CardRedirect />
+      <CardNotFound />
     </div>
   );
 }
