@@ -5,7 +5,7 @@ import { Label } from "./ui/label";
 
 export default function CardNewLink() {
   return (
-    <Card className="w-96">
+    <Card className="w-full md:w-96 h-fit">
       <CardHeader>
         <CardTitle>Novo Link</CardTitle>
       </CardHeader>

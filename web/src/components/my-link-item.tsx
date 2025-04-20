@@ -6,7 +6,7 @@ export default function MyLinkItem() {
   return (
     <div className="flex flex-col max-w-full w-full h-auto">
       <div className="flex w-full max-w-full items-center gap-4">
-        <div className="flex flex-col min-w-0">
+        <div className="flex flex-col min-w-0 w-full">
           <p className="text-lg font-semibold text-primary truncate text-ellipsis overflow-hidden whitespace-nowrap">
             brev.ly/portfolio-dev/3841293470123701923701274
           </p>
@@ -14,7 +14,7 @@ export default function MyLinkItem() {
             devsite.portfolio.com.br/developer/açsldkjaçsldjfaçsljdfçalsj
           </p>
         </div>
-        <div className="flex w-40 min-w-0">
+        <div className="flex w-40">
           <span>30 acessos</span>
         </div>
         <div className="flex gap-1">
